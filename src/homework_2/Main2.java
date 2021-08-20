@@ -10,25 +10,14 @@ public class Main2 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Введіть речення/'Я замінб голосні на пробіл/'");
         String text = sc.next();
-        if ((text.indexOf('e') > -1)){
-            if ((text.indexOf('a') > -1)){
-                if ((text.indexOf('u') > -1)){
-                    if ((text.indexOf('o') > -1)){
-                        System.out.println(text.replace('e','-').replace('a','-').replace('o','-').replace('u','-'));
-                    }else{
-                        System.out.println(text.replace('e','-').replace('a','-').replace('u','-'));
-                    }
-                }else{
-                    System.out.println(text.replace('e','-').replace('a','-'));
-                }
-            }else {
-                System.out.println(text.replace('e','-'));
-            }
 
-        }else {
-            System.out.println(text);
-        }
-
-
+    if ((text.indexOf('e') > -1)||(text.indexOf('a') > -1)||(text.indexOf('u') > -1)||(text.indexOf('o') > -1)){
+        System.out.println(text.replace('e','-').replace('a','-').replace('o','-').replace('u','-'));
     }
+    else {
+        System.out.println(text);
+    }
+    }
+
+
 }
